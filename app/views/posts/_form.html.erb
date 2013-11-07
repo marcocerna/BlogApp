@@ -1,0 +1,17 @@
+  <p><strong>Photo Post</strong></p><br>
+
+  <%= form_for @photo_post do |f| %>
+    <%= f.text_field :title, placeholder: "Post Image Title" %><br>
+    <%= f.text_field :url, placeholder: "Post Image URL" %><br>
+    <%= f.submit "Create Image Post", id: "photo_submit" %>
+  <% end %>
+
+  <br><br>
+
+  <p><strong>Text Post</strong></p><br>
+
+  <%= form_for @text_post do |f| %>
+    <%= f.text_field :title, placeholder: "Post Text Title" %><br>
+    <%= f.text_area :content, placeholder: "Post Content" %><br>
+    <%= f.submit "Create Text Post", id: "text_submit" %>
+  <% end %>
